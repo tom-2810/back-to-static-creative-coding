@@ -1,5 +1,6 @@
 <script>
 	import Header from '$lib/components/header.svelte';
+	import Wow from '../lib/components/wow.svelte';
 	import '../global.css';
 
 	import { page } from '$app/stores';
@@ -22,7 +23,7 @@
 		});
 	});
 </script>
-
+<Wow />
 <Header {params} {partners} {websites} />
 <main>
 	<slot />
