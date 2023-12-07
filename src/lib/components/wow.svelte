@@ -1,10 +1,15 @@
 <script>
   import wowCloud from "$lib/assets/wow-cloud.png";
+  import wowSound from '$lib/assets/wow.mp3'
 
   import { gsap } from "gsap/dist/gsap";
   import { onMount } from "svelte";
 
   onMount(() => {
+    let wow = new Audio();
+
+    wow.src = wowSound
+
     gsap.to(".page-transition img", {
       opacity: 0,
       duration: 0.8,
@@ -23,6 +28,8 @@
       link.addEventListener("click", function (e) {
         e.preventDefault();
         let destination = link.href;
+
+        wow.play()
 
         gsap.set(".page-transition", { display: "flex" });
         gsap.fromTo(
