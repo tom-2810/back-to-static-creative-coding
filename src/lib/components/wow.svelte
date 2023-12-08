@@ -69,6 +69,9 @@
 </div>
 
 <style>
+  .page-transition {
+    display: none;
+  }
   div {
     position: fixed;
     top: 0;
