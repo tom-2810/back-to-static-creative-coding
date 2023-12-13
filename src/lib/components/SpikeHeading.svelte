@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
-    animation: scroll 30s linear infinite;
+    animation: scroll 10s linear infinite;
     text-transform: uppercase;
     color: black;
   }
