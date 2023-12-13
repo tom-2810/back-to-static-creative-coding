@@ -6,10 +6,12 @@
   import { onMount } from "svelte";
 
   onMount(() => {
-    let wow = new Audio();
+    const wow = new Audio();
 
     wow.src = wowSound
 
+    gsap.set(".page-transition", { display: "flex" });
+    
     gsap.to(".page-transition img", {
       opacity: 0,
       duration: 0.8,
