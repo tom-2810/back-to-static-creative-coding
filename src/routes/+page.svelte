@@ -33,11 +33,11 @@
         start: `-20% top`,
         end: `120% bottom`,
         scrub: 1,
-        markers: true,
+        markers: false,
       },
     });
     tl.to("ul.bg", {
-      y: 700,
+      y: 900,
     });
   });
 </script>

@@ -6,6 +6,9 @@ export default function getQueryPartner(gql){
             titel
             slug
             homepage
+            preview {
+                url
+            }
         }
     }`
 }

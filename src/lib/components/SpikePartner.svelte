@@ -1,15 +1,13 @@
 <script>
   export let website;
   export let layer;
-
-  const faviconAPI =
-    "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=";
 </script>
 
 <a class={layer} href={website.slug}>
   <div>
-    <img height="60" src="{faviconAPI}{website.homepage}/&size=128" alt="" />
+    <img height="60" src={website.preview.url} alt="" />
   </div>
+
   <h2>
     {website.titel}
   </h2>
@@ -40,7 +38,9 @@
   }
 
   img {
-    margin: 2rem;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
   }
 
   a:nth-child(1n) {
@@ -68,7 +68,7 @@
 
   @media only screen and (max-width: 700px) {
     a {
-    width: 120%;
+      width: 120%;
     }
   }
 </style>
