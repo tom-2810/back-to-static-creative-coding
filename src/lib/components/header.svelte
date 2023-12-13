@@ -103,6 +103,7 @@
 		top: 0;
 		display: flex;
 		flex-direction: column;
+		z-index: 1;
 	}
 
 	nav {

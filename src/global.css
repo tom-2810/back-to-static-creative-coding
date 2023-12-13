@@ -71,4 +71,15 @@ p {
     font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
-/* Default layout */
+
+ul.bg div {
+    opacity: .1;
+}
+
+ul h2 {
+    font-size: 1rem;
+}
+
+ul.bg h2 {
+    display: none;
+}
