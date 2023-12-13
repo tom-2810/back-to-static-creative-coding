@@ -7,6 +7,7 @@
   import Heading from "$lib/components/heading.svelte";
   import Partner from "$lib/components/partner.svelte";
   import SpikePartner from "$lib/components/SpikePartner.svelte";
+  import SpikeHeading from "../lib/components/SpikeHeading.svelte";
   export let data;
   gsap.registerPlugin(ScrollTrigger);
 
@@ -42,7 +43,7 @@
   });
 </script>
 
-<Heading {heading} />
+<SpikeHeading {heading} />
 
 <form on:submit|preventDefault={submit}>
   <label for="partner-search">Zoek een partner</label>
@@ -78,6 +79,7 @@
   form {
     margin: 0 1em;
     margin-bottom: 1em;
+    margin-top: 4rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
