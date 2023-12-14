@@ -6,7 +6,7 @@
 <div>
 
   <Tower />
-  <span>Vervoerregio Partners</span>
+  <span>Vervoerregio Amsterdam</span>
 </div>
 <style>
   div {

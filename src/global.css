@@ -39,6 +39,14 @@
 body {
     background-color: var(--c-background);
     color: var(--c-white);
+    box-shadow: 0px 0px 0px 4px var(--c-background),
+    0px 0px 0px 8px white,
+    0px 0px 0px 12px var(--c-background),
+    0px 0px 0px 16px white,
+    0px 0px 0px 20px var(--c-background),
+    0px 0px 0px 24px white;
+    margin: 1.8rem;
+    padding-bottom: 2rem;
     overflow-x: hidden;
 }
 
@@ -77,10 +85,10 @@ ul.bg div {
     opacity: .1;
 }
 
-ul h2 {
+ul h3 {
     font-size: 1rem;
 }
 
-ul.bg h2 {
+ul.bg h3 {
     display: none;
 }

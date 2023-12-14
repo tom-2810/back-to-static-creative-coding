@@ -8,9 +8,9 @@
     <img height="60" src={website.preview.url} alt="" />
   </div>
 
-  <h2>
+  <h3>
     {website.titel}
-  </h2>
+  </h3>
 </a>
 
 <style>

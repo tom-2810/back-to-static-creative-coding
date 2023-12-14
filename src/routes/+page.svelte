@@ -29,6 +29,7 @@
 
 <SpikeHeading />
 
+<h2>Partners</h2>
 <section>
   <ul>
     {#each data.websites as website}
@@ -47,7 +48,25 @@
   section {
     position: relative;
     height: 200vh;
+    border: 4px solid white;
+    box-shadow: 
+    0px 0px 0px 4px var(--c-background),
+    0px 0px 0px 8px white,
+    0px 0px 0px 12px var(--c-background),
+    0px 0px 0px 16px white,
+    0px 0px 0px 20px var(--c-background),
+    0px 0px 0px 24px white;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto 10rem auto;
     overflow-y: hidden;
+  }
+
+  h2 {
+    font-size: 3rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto 2rem auto;
   }
 
   ul {
@@ -55,18 +74,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5%;
-    width: 100%;
-    max-width: 80rem;
+    width: 90%;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;
   }
 
   ul.bg {
     top: -15rem;
     column-gap: 3%;
-    max-width: 70rem;
-    margin: 0 auto;
     z-index: -1;
   }
 
