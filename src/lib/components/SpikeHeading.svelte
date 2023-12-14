@@ -1,44 +1,35 @@
 <script>
-  export let heading;
+  import Tower from "$lib/components/tower.svelte";
+
 </script>
 
-<div href="#contact" class="banner">
-  <div class="banner-content">
-    {heading.titel}
-    {heading.titel}
-  </div>
-  <div class="banner-content">
-    {heading.titel}
-    {heading.titel}
-  </div>
-</div>
+<div>
 
+  <Tower />
+  <span>Vervoerregio Partners</span>
+</div>
 <style>
-  .banner {
-    width: 240%;
-    background-color: white;
-    font-size: 4rem;
-    flex-shrink: 0;
-    display: flex;
-    overflow: hidden;
-    gap: 0.5rem;
-    z-index: 1;
-  }
-  .banner-content {
+  div {
     display: flex;
     flex-direction: row;
-    flex-shrink: 0;
-    animation: scroll 10s linear infinite;
-    text-transform: uppercase;
-    color: black;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-bottom: 20rem;
   }
 
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - 1rem));
+  span {
+    font-size: clamp(3rem, 6vw, 6rem);
+    width: min-content;
+    font-weight: 800;
+  }
+
+  @media only screen and (max-width: 900px) {
+    div {
+      flex-direction: column;
+      gap: 10rem;
     }
   }
 </style>
