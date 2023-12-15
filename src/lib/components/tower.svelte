@@ -34,6 +34,7 @@
         height: 100%;
         width: 100%;
         animation: 1s fold-out forwards;
+        animation-delay: 1s;
     }
 
     .floor:hover {
