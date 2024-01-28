@@ -23,7 +23,7 @@
 		});
 	});
 </script>
-<!-- <Wow /> -->
+<Wow />
 <Header {params} {partners} {websites} />
 <main>
 	<slot />

@@ -5,7 +5,7 @@
 
 <a class={layer} href={website.slug}>
   <div>
-    <img height="60" src={website.preview.url} alt="" />
+    <img height="60" src={website.preview?.url} alt="" />
   </div>
 
   <h3>
